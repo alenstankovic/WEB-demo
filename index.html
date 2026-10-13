@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="hr">
+<html lang="bs">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sun Square Apartmani</title>
-  <meta name="description" content="Sun Square Apartmani – udobni apartmani za vaš odmor. Rezervirajte direktno kod vlasnika.">
+  <title data-i18n="meta.title">Sun Square Apartmani</title>
+  <meta name="description" data-i18n-attr="content:meta.desc" content="Sun Square Apartmani – udobni apartmani za vaš odmor. Rezervišite direktno kod vlasnika.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,33 +14,39 @@
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="logo" aria-label="Sun Square Apartmani – početna">
+      <a href="#top" class="logo" data-i18n-attr="aria-label:header.home" aria-label="Sun Square Apartmani – početna">
         <span class="logo-mark" aria-hidden="true"></span>
-        <span>Sun Square <em>Apartmani</em></span>
+        <span>Sun Square <em data-i18n="header.apartments">Apartmani</em></span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Otvori izbornik">
-        <span></span><span></span><span></span>
-      </button>
       <nav class="nav" id="nav">
-        <a href="#o-nama">O nama</a>
-        <a href="#apartmani">Apartmani</a>
-        <a href="#sadrzaji">Sadržaji</a>
-        <a href="#galerija">Galerija</a>
-        <a href="#lokacija">Lokacija</a>
-        <a href="#kontakt" class="btn btn-small">Rezervacija</a>
+        <a href="#o-nama" data-i18n="nav.about">O nama</a>
+        <a href="#apartmani" data-i18n="nav.apartments">Apartmani</a>
+        <a href="#sadrzaji" data-i18n="nav.amenities">Sadržaji</a>
+        <a href="#galerija" data-i18n="nav.gallery">Galerija</a>
+        <a href="#lokacija" data-i18n="nav.location">Lokacija</a>
+        <a href="#kontakt" class="btn btn-small" data-i18n="nav.book">Rezervacija</a>
       </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:header.language" aria-label="Jezik">
+          <button type="button" data-lang="bs" lang="bs" aria-pressed="true">BS</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav" data-i18n-attr="aria-label:nav.open" aria-label="Otvori meni">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="container hero-content">
-        <p class="eyebrow">Dobrodošli</p>
-        <h1>Vaše mjesto pod suncem</h1>
-        <p class="lead">Udobni i moderno opremljeni apartmani na mirnoj lokaciji, nadomak plaže i centra grada.</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Dobrodošli</p>
+        <h1 data-i18n="hero.title">Vaše mjesto pod suncem</h1>
+        <p class="lead" data-i18n="hero.lead">Udobni i moderno opremljeni apartmani na mirnoj lokaciji, nadomak plaže i centra grada.</p>
         <div class="hero-actions">
-          <a href="#kontakt" class="btn">Provjerite dostupnost</a>
-          <a href="#apartmani" class="btn btn-ghost">Pogledajte apartmane</a>
+          <a href="#kontakt" class="btn" data-i18n="hero.cta">Provjerite dostupnost</a>
+          <a href="#apartmani" class="btn btn-ghost" data-i18n="hero.cta2">Pogledajte apartmane</a>
         </div>
       </div>
     </section>
@@ -48,52 +54,52 @@
     <section class="section" id="o-nama">
       <div class="container split">
         <div>
-          <p class="eyebrow">O nama</p>
-          <h2>Obiteljski smještaj s osobnim pristupom</h2>
-          <p>Sun Square Apartmani nude miran i ugodan boravak za parove, obitelji i prijatelje. Svaki apartman uređen je s pažnjom kako biste se osjećali kao kod kuće – od kvalitetnih kreveta do potpuno opremljene kuhinje.</p>
-          <p>Rezervacijom direktno kod nas dobivate najbolju cijenu i brz odgovor na sva pitanja.</p>
+          <p class="eyebrow" data-i18n="about.eyebrow">O nama</p>
+          <h2 data-i18n="about.title">Porodični smještaj s ličnim pristupom</h2>
+          <p data-i18n="about.p1">Sun Square Apartmani nude miran i ugodan boravak za parove, obitelji i prijatelje. Svaki apartman uređen je s pažnjom kako biste se osjećali kao kod kuće – od kvalitetnih kreveta do potpuno opremljene kuhinje.</p>
+          <p data-i18n="about.p2">Rezervacijom direktno kod nas dobijate najbolju cijenu i brz odgovor na sva pitanja.</p>
           <ul class="stats">
-            <li><strong>3</strong><span>apartmana</span></li>
-            <li><strong>200 m</strong><span>do plaže</span></li>
-            <li><strong>9,4</strong><span>ocjena gostiju</span></li>
+            <li><strong>3</strong><span data-i18n="about.stat1">apartmana</span></li>
+            <li><strong>200 m</strong><span data-i18n="about.stat2">do plaže</span></li>
+            <li><strong>9,4</strong><span data-i18n="about.stat3">ocjena gostiju</span></li>
           </ul>
         </div>
-        <div class="photo photo-tall" role="img" aria-label="Fotografija objekta (zamijeniti)"></div>
+        <div class="photo photo-tall" role="img" data-i18n-attr="aria-label:about.photo" aria-label="Fotografija objekta (zamijeniti)"></div>
       </div>
     </section>
 
     <section class="section section-alt" id="apartmani">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Smještaj</p>
-          <h2>Naši apartmani</h2>
+          <p class="eyebrow" data-i18n="apts.eyebrow">Smještaj</p>
+          <h2 data-i18n="apts.title">Naši apartmani</h2>
         </div>
         <div class="cards">
           <article class="card">
-            <div class="photo" role="img" aria-label="Apartman Studio (zamijeniti)"></div>
+            <div class="photo" role="img" data-i18n-attr="aria-label:apts.1.photo" aria-label="Apartman Studio (zamijeniti)"></div>
             <div class="card-body">
-              <h3>Studio Sunce</h3>
-              <p class="meta">2 osobe · 28 m² · balkon</p>
-              <p>Idealan za parove. Bračni krevet, čajna kuhinja i balkon s pogledom.</p>
-              <p class="price">od <strong>55 €</strong> / noć</p>
+              <h3 data-i18n="apts.1.name">Studio Sunce</h3>
+              <p class="meta" data-i18n="apts.1.meta">2 osobe · 28 m² · balkon</p>
+              <p data-i18n="apts.1.desc">Idealan za parove. Bračni krevet, čajna kuhinja i balkon s pogledom.</p>
+              <p class="price" data-i18n-html="apts.1.price">od <strong>55 €</strong> / noć</p>
             </div>
           </article>
           <article class="card">
-            <div class="photo" role="img" aria-label="Apartman za 4 osobe (zamijeniti)"></div>
+            <div class="photo" role="img" data-i18n-attr="aria-label:apts.2.photo" aria-label="Apartman za 4 osobe (zamijeniti)"></div>
             <div class="card-body">
-              <h3>Apartman Trg</h3>
-              <p class="meta">4 osobe · 45 m² · terasa</p>
-              <p>Spavaća soba, dnevni boravak s kaučem na razvlačenje i velika terasa.</p>
-              <p class="price">od <strong>80 €</strong> / noć</p>
+              <h3 data-i18n="apts.2.name">Apartman Trg</h3>
+              <p class="meta" data-i18n="apts.2.meta">4 osobe · 45 m² · terasa</p>
+              <p data-i18n="apts.2.desc">Spavaća soba, dnevni boravak s kaučem na razvlačenje i velika terasa.</p>
+              <p class="price" data-i18n-html="apts.2.price">od <strong>80 €</strong> / noć</p>
             </div>
           </article>
           <article class="card">
-            <div class="photo" role="img" aria-label="Obiteljski apartman (zamijeniti)"></div>
+            <div class="photo" role="img" data-i18n-attr="aria-label:apts.3.photo" aria-label="Porodični apartman (zamijeniti)"></div>
             <div class="card-body">
-              <h3>Obiteljski apartman</h3>
-              <p class="meta">6 osoba · 70 m² · 2 kupaonice</p>
-              <p>Dvije spavaće sobe, prostrani dnevni boravak i dvije kupaonice.</p>
-              <p class="price">od <strong>110 €</strong> / noć</p>
+              <h3 data-i18n="apts.3.name">Porodični apartman</h3>
+              <p class="meta" data-i18n="apts.3.meta">6 osoba · 70 m² · 2 kupatila</p>
+              <p data-i18n="apts.3.desc">Dvije spavaće sobe, prostrani dnevni boravak i dva kupatila.</p>
+              <p class="price" data-i18n-html="apts.3.price">od <strong>110 €</strong> / noć</p>
             </div>
           </article>
         </div>
@@ -103,18 +109,18 @@
     <section class="section" id="sadrzaji">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Sadržaji</p>
-          <h2>Sve što vam treba za odmor</h2>
+          <p class="eyebrow" data-i18n="amen.eyebrow">Sadržaji</p>
+          <h2 data-i18n="amen.title">Sve što vam treba za odmor</h2>
         </div>
         <ul class="amenities">
-          <li><span aria-hidden="true">📶</span>Besplatan Wi-Fi</li>
-          <li><span aria-hidden="true">❄️</span>Klima uređaj</li>
-          <li><span aria-hidden="true">🅿️</span>Besplatan parking</li>
-          <li><span aria-hidden="true">🍳</span>Opremljena kuhinja</li>
-          <li><span aria-hidden="true">🌿</span>Terasa / balkon</li>
-          <li><span aria-hidden="true">🏖️</span>Blizina plaže</li>
-          <li><span aria-hidden="true">🧺</span>Posteljina i ručnici</li>
-          <li><span aria-hidden="true">🐾</span>Kućni ljubimci na upit</li>
+          <li><span aria-hidden="true">📶</span><b data-i18n="amen.wifi">Besplatan Wi-Fi</b></li>
+          <li><span aria-hidden="true">❄️</span><b data-i18n="amen.ac">Klima uređaj</b></li>
+          <li><span aria-hidden="true">🅿️</span><b data-i18n="amen.parking">Besplatan parking</b></li>
+          <li><span aria-hidden="true">🍳</span><b data-i18n="amen.kitchen">Opremljena kuhinja</b></li>
+          <li><span aria-hidden="true">🌿</span><b data-i18n="amen.terrace">Terasa / balkon</b></li>
+          <li><span aria-hidden="true">🏖️</span><b data-i18n="amen.beach">Blizina plaže</b></li>
+          <li><span aria-hidden="true">🧺</span><b data-i18n="amen.linen">Posteljina i peškiri</b></li>
+          <li><span aria-hidden="true">🐾</span><b data-i18n="amen.pets">Kućni ljubimci na upit</b></li>
         </ul>
       </div>
     </section>
@@ -122,15 +128,15 @@
     <section class="section section-alt" id="galerija">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Galerija</p>
-          <h2>Pogled iznutra</h2>
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Galerija</p>
+          <h2 data-i18n="gallery.title">Pogled iznutra</h2>
         </div>
         <div class="gallery">
-          <div class="photo g1" role="img" aria-label="Galerija slika 1 (zamijeniti)"></div>
-          <div class="photo g2" role="img" aria-label="Galerija slika 2 (zamijeniti)"></div>
-          <div class="photo g3" role="img" aria-label="Galerija slika 3 (zamijeniti)"></div>
-          <div class="photo g4" role="img" aria-label="Galerija slika 4 (zamijeniti)"></div>
-          <div class="photo g5" role="img" aria-label="Galerija slika 5 (zamijeniti)"></div>
+          <div class="photo g1" role="img" data-i18n-attr="aria-label:gallery.photo1" aria-label="Galerija slika 1 (zamijeniti)"></div>
+          <div class="photo g2" role="img" data-i18n-attr="aria-label:gallery.photo2" aria-label="Galerija slika 2 (zamijeniti)"></div>
+          <div class="photo g3" role="img" data-i18n-attr="aria-label:gallery.photo3" aria-label="Galerija slika 3 (zamijeniti)"></div>
+          <div class="photo g4" role="img" data-i18n-attr="aria-label:gallery.photo4" aria-label="Galerija slika 4 (zamijeniti)"></div>
+          <div class="photo g5" role="img" data-i18n-attr="aria-label:gallery.photo5" aria-label="Galerija slika 5 (zamijeniti)"></div>
         </div>
       </div>
     </section>
@@ -138,18 +144,18 @@
     <section class="section" id="lokacija">
       <div class="container split">
         <div>
-          <p class="eyebrow">Lokacija</p>
-          <h2>Kako do nas</h2>
-          <p>Ulica i kućni broj<br>10000 Grad, Država</p>
+          <p class="eyebrow" data-i18n="loc.eyebrow">Lokacija</p>
+          <h2 data-i18n="loc.title">Kako do nas</h2>
+          <p data-i18n-html="loc.address">Ulica i kućni broj<br>10000 Grad, Država</p>
           <ul class="distances">
-            <li><span>Plaža</span><strong>200 m</strong></li>
-            <li><span>Centar grada</span><strong>500 m</strong></li>
-            <li><span>Trgovina</span><strong>150 m</strong></li>
-            <li><span>Zračna luka</span><strong>25 km</strong></li>
+            <li><span data-i18n="loc.beach">Plaža</span><strong>200 m</strong></li>
+            <li><span data-i18n="loc.center">Centar grada</span><strong>500 m</strong></li>
+            <li><span data-i18n="loc.shop">Prodavnica</span><strong>150 m</strong></li>
+            <li><span data-i18n="loc.airport">Aerodrom</span><strong>25 km</strong></li>
           </ul>
         </div>
-        <div class="map" role="img" aria-label="Mjesto za kartu (zamijeniti Google Maps ugradnjom)">
-          <span>Karta</span>
+        <div class="map" role="img" data-i18n-attr="aria-label:loc.mapLabel" aria-label="Mjesto za kartu (zamijeniti Google Maps ugradnjom)">
+          <span data-i18n="loc.map">Karta</span>
         </div>
       </div>
     </section>
@@ -157,54 +163,54 @@
     <section class="section section-sun" id="kontakt">
       <div class="container split">
         <div>
-          <p class="eyebrow">Rezervacija</p>
-          <h2>Pošaljite upit</h2>
-          <p>Javite nam datume i broj osoba – odgovaramo u roku od 24 sata.</p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Rezervacija</p>
+          <h2 data-i18n="contact.title">Pošaljite upit</h2>
+          <p data-i18n="contact.lead">Javite nam datume i broj osoba – odgovaramo u roku od 24 sata.</p>
           <ul class="contact-list">
-            <li>📞 <a href="tel:+385000000000">+385 00 000 0000</a></li>
+            <li>📞 <a href="tel:+387000000000">+387 00 000 000</a></li>
             <li>✉️ <a href="mailto:info@sunsquare.example">info@sunsquare.example</a></li>
-            <li>💬 WhatsApp / Viber na isti broj</li>
+            <li>💬 <span data-i18n="contact.messaging">WhatsApp / Viber na isti broj</span></li>
           </ul>
         </div>
         <form class="form" id="inquiry-form" novalidate>
           <div class="field">
-            <label for="name">Ime i prezime</label>
+            <label for="name" data-i18n="form.name">Ime i prezime</label>
             <input id="name" name="name" required autocomplete="name">
           </div>
           <div class="field">
-            <label for="email">E-mail</label>
+            <label for="email" data-i18n="form.email">E-mail</label>
             <input id="email" name="email" type="email" required autocomplete="email">
           </div>
           <div class="field-row">
             <div class="field">
-              <label for="checkin">Dolazak</label>
+              <label for="checkin" data-i18n="form.checkin">Dolazak</label>
               <input id="checkin" name="checkin" type="date" required>
             </div>
             <div class="field">
-              <label for="checkout">Odlazak</label>
+              <label for="checkout" data-i18n="form.checkout">Odlazak</label>
               <input id="checkout" name="checkout" type="date" required>
             </div>
           </div>
           <div class="field-row">
             <div class="field">
-              <label for="guests">Broj osoba</label>
+              <label for="guests" data-i18n="form.guests">Broj osoba</label>
               <input id="guests" name="guests" type="number" min="1" max="6" value="2" required>
             </div>
             <div class="field">
-              <label for="apartment">Apartman</label>
+              <label for="apartment" data-i18n="form.apartment">Apartman</label>
               <select id="apartment" name="apartment">
-                <option>Svejedno</option>
-                <option>Studio Sunce</option>
-                <option>Apartman Trg</option>
-                <option>Obiteljski apartman</option>
+                <option data-i18n="form.any">Svejedno</option>
+                <option data-i18n="apts.1.name">Studio Sunce</option>
+                <option data-i18n="apts.2.name">Apartman Trg</option>
+                <option data-i18n="apts.3.name">Porodični apartman</option>
               </select>
             </div>
           </div>
           <div class="field">
-            <label for="message">Poruka</label>
+            <label for="message" data-i18n="form.message">Poruka</label>
             <textarea id="message" name="message" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-full">Pošalji upit</button>
+          <button type="submit" class="btn btn-full" data-i18n="form.submit">Pošalji upit</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -214,10 +220,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Sun Square Apartmani</p>
-      <a href="#top">Natrag na vrh ↑</a>
+      <a href="#top" data-i18n="footer.top">Nazad na vrh ↑</a>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

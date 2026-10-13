@@ -1,18 +1,19 @@
-// Mobilni izbornik
+const { t } = window.i18n;
+
+// Mobilni meni
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.getElementById('nav');
 
-toggle.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
+function setMenu(open) {
+  nav.classList.toggle('open', open);
   toggle.setAttribute('aria-expanded', open);
-  toggle.setAttribute('aria-label', open ? 'Zatvori izbornik' : 'Otvori izbornik');
-});
+  toggle.setAttribute('aria-label', t(open ? 'nav.close' : 'nav.open'));
+}
+
+toggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
 
 nav.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A') {
-    nav.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }
+  if (e.target.tagName === 'A') setMenu(false);
 });
 
 // Godina u podnožju
@@ -33,6 +34,13 @@ checkin.addEventListener('change', () => {
   if (checkout.value && checkout.value <= checkin.value) checkout.value = '';
 });
 
+document.addEventListener('langchange', () => {
+  setMenu(nav.classList.contains('open'));
+  status.textContent = '';
+});
+
+const label = (id) => form.querySelector(`label[for="${id}"]`).textContent;
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -50,28 +58,23 @@ form.addEventListener('submit', (e) => {
 
   if (!valid) {
     status.className = 'form-status error';
-    status.textContent = 'Molimo ispravno ispunite označena polja.';
+    status.textContent = t('form.error');
     return;
   }
 
-  // Nema poslužitelja: upit se šalje putem e-mail klijenta.
+  // Nema servera: upit se šalje putem e-mail programa posjetioca.
   const d = Object.fromEntries(new FormData(form));
   const body = [
-    `Ime: ${d.name}`,
-    `E-mail: ${d.email}`,
-    `Dolazak: ${d.checkin}`,
-    `Odlazak: ${d.checkout}`,
-    `Broj osoba: ${d.guests}`,
-    `Apartman: ${d.apartment}`,
+    ...['name', 'email', 'checkin', 'checkout', 'guests', 'apartment'].map((id) => `${label(id)}: ${d[id]}`),
     '',
     d.message,
   ].join('\n');
 
   window.location.href =
     'mailto:info@sunsquare.example' +
-    `?subject=${encodeURIComponent('Upit za smještaj – ' + d.name)}` +
+    `?subject=${encodeURIComponent(`${t('form.subject')} – ${d.name}`)}` +
     `&body=${encodeURIComponent(body)}`;
 
   status.className = 'form-status ok';
-  status.textContent = 'Hvala! Otvara se vaš e-mail program za slanje upita.';
+  status.textContent = t('form.ok');
 });
