@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title data-i18n="meta.title">Sun Square Apartmani</title>
   <meta name="description" data-i18n-attr="content:meta.desc" content="Sun Square Apartmani – udobni apartmani za vaš odmor. Rezervišite direktno kod vlasnika.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sun Square Apartmani">
+  <meta property="og:description" content="Udobni i moderno opremljeni apartmani na mirnoj lokaciji, nadomak centra grada.">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta name="theme-color" content="#f4a623">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -43,7 +49,7 @@
       <div class="container hero-content">
         <p class="eyebrow" data-i18n="hero.eyebrow">Dobrodošli</p>
         <h1 data-i18n="hero.title">Vaše mjesto pod suncem</h1>
-        <p class="lead" data-i18n="hero.lead">Udobni i moderno opremljeni apartmani na mirnoj lokaciji, nadomak plaže i centra grada.</p>
+        <p class="lead" data-i18n="hero.lead">Udobni i moderno opremljeni apartmani na mirnoj lokaciji, nadomak centra grada.</p>
         <div class="hero-actions">
           <a href="#kontakt" class="btn" data-i18n="hero.cta">Provjerite dostupnost</a>
           <a href="#apartmani" class="btn btn-ghost" data-i18n="hero.cta2">Pogledajte apartmane</a>
@@ -56,15 +62,15 @@
         <div>
           <p class="eyebrow" data-i18n="about.eyebrow">O nama</p>
           <h2 data-i18n="about.title">Porodični smještaj s ličnim pristupom</h2>
-          <p data-i18n="about.p1">Sun Square Apartmani nude miran i ugodan boravak za parove, obitelji i prijatelje. Svaki apartman uređen je s pažnjom kako biste se osjećali kao kod kuće – od kvalitetnih kreveta do potpuno opremljene kuhinje.</p>
+          <p data-i18n="about.p1">Sun Square Apartmani nude miran i ugodan boravak za parove, porodice i prijatelje. Svaki apartman uređen je s pažnjom kako biste se osjećali kao kod kuće – od kvalitetnih kreveta do potpuno opremljene kuhinje.</p>
           <p data-i18n="about.p2">Rezervacijom direktno kod nas dobijate najbolju cijenu i brz odgovor na sva pitanja.</p>
           <ul class="stats">
-            <li><strong>3</strong><span data-i18n="about.stat1">apartmana</span></li>
-            <li><strong>200 m</strong><span data-i18n="about.stat2">do plaže</span></li>
+            <li><strong>2</strong><span data-i18n="about.stat1">apartmana</span></li>
+            <li><strong>500 m</strong><span data-i18n="about.stat2">do centra</span></li>
             <li><strong>9,4</strong><span data-i18n="about.stat3">ocjena gostiju</span></li>
           </ul>
         </div>
-        <div class="photo photo-tall" role="img" data-i18n-attr="aria-label:about.photo" aria-label="Fotografija objekta (zamijeniti)"></div>
+        <img class="photo photo-tall" src="img/about.jpg" loading="lazy" data-i18n-attr="alt:photo.about" alt="Dnevni boravak i spavaća soba">
       </div>
     </section>
 
@@ -76,30 +82,27 @@
         </div>
         <div class="cards">
           <article class="card">
-            <div class="photo" role="img" data-i18n-attr="aria-label:apts.1.photo" aria-label="Apartman Studio (zamijeniti)"></div>
+            <button type="button" class="card-photo" data-open-apt="1">
+              <img class="photo" src="img/thumbs/apt1-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living" alt="Dnevni boravak s kuhinjom – Apartman 1">
+              <span class="photo-count" data-i18n="apts.photos">📷 Fotografije</span>
+            </button>
             <div class="card-body">
-              <h3 data-i18n="apts.1.name">Studio Sunce</h3>
-              <p class="meta" data-i18n="apts.1.meta">2 osobe · 28 m² · balkon</p>
-              <p data-i18n="apts.1.desc">Idealan za parove. Bračni krevet, čajna kuhinja i balkon s pogledom.</p>
-              <p class="price" data-i18n-html="apts.1.price">od <strong>55 €</strong> / noć</p>
+              <h3 data-i18n="apts.1.name">Apartman 1</h3>
+              <p class="meta" data-i18n="apts.1.meta">Spavaća soba · dnevni boravak · kuhinja · kupatilo</p>
+              <p data-i18n="apts.1.desc">Svijetao apartman s opremljenom kuhinjom, kupatilom u mramoru, klima-uređajem i pametnom kućom s video-interfonom.</p>
+              <p class="price" data-i18n="apts.price">Cijena na upit</p>
             </div>
           </article>
           <article class="card">
-            <div class="photo" role="img" data-i18n-attr="aria-label:apts.2.photo" aria-label="Apartman za 4 osobe (zamijeniti)"></div>
+            <button type="button" class="card-photo" data-open-apt="2">
+              <img class="photo" src="img/thumbs/apt2-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living" alt="Dnevni boravak s ugaonom garniturom – Apartman 2">
+              <span class="photo-count" data-i18n="apts.photos">📷 Fotografije</span>
+            </button>
             <div class="card-body">
-              <h3 data-i18n="apts.2.name">Apartman Trg</h3>
-              <p class="meta" data-i18n="apts.2.meta">4 osobe · 45 m² · terasa</p>
-              <p data-i18n="apts.2.desc">Spavaća soba, dnevni boravak s kaučem na razvlačenje i velika terasa.</p>
-              <p class="price" data-i18n-html="apts.2.price">od <strong>80 €</strong> / noć</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="photo" role="img" data-i18n-attr="aria-label:apts.3.photo" aria-label="Porodični apartman (zamijeniti)"></div>
-            <div class="card-body">
-              <h3 data-i18n="apts.3.name">Porodični apartman</h3>
-              <p class="meta" data-i18n="apts.3.meta">6 osoba · 70 m² · 2 kupatila</p>
-              <p data-i18n="apts.3.desc">Dvije spavaće sobe, prostrani dnevni boravak i dva kupatila.</p>
-              <p class="price" data-i18n-html="apts.3.price">od <strong>110 €</strong> / noć</p>
+              <h3 data-i18n="apts.2.name">Apartman 2</h3>
+              <p class="meta" data-i18n="apts.2.meta">Spavaća soba · dnevni boravak · kuhinja · balkon</p>
+              <p data-i18n="apts.2.desc">Prostran dnevni boravak s ugaonom garniturom i izlazom na balkon, opremljena kuhinja i kupatilo s veš mašinom.</p>
+              <p class="price" data-i18n="apts.price">Cijena na upit</p>
             </div>
           </article>
         </div>
@@ -118,7 +121,7 @@
           <li><span aria-hidden="true">🅿️</span><b data-i18n="amen.parking">Besplatan parking</b></li>
           <li><span aria-hidden="true">🍳</span><b data-i18n="amen.kitchen">Opremljena kuhinja</b></li>
           <li><span aria-hidden="true">🌿</span><b data-i18n="amen.terrace">Terasa / balkon</b></li>
-          <li><span aria-hidden="true">🏖️</span><b data-i18n="amen.beach">Blizina plaže</b></li>
+          <li><span aria-hidden="true">🫧</span><b data-i18n="amen.washer">Veš mašina</b></li>
           <li><span aria-hidden="true">🧺</span><b data-i18n="amen.linen">Posteljina i peškiri</b></li>
           <li><span aria-hidden="true">🐾</span><b data-i18n="amen.pets">Kućni ljubimci na upit</b></li>
         </ul>
@@ -131,13 +134,29 @@
           <p class="eyebrow" data-i18n="gallery.eyebrow">Galerija</p>
           <h2 data-i18n="gallery.title">Pogled iznutra</h2>
         </div>
-        <div class="gallery">
-          <div class="photo g1" role="img" data-i18n-attr="aria-label:gallery.photo1" aria-label="Galerija slika 1 (zamijeniti)"></div>
-          <div class="photo g2" role="img" data-i18n-attr="aria-label:gallery.photo2" aria-label="Galerija slika 2 (zamijeniti)"></div>
-          <div class="photo g3" role="img" data-i18n-attr="aria-label:gallery.photo3" aria-label="Galerija slika 3 (zamijeniti)"></div>
-          <div class="photo g4" role="img" data-i18n-attr="aria-label:gallery.photo4" aria-label="Galerija slika 4 (zamijeniti)"></div>
-          <div class="photo g5" role="img" data-i18n-attr="aria-label:gallery.photo5" aria-label="Galerija slika 5 (zamijeniti)"></div>
+        <div class="gallery" id="gallery">
+          <a href="img/apt1-living-2.jpg" data-apt="1"><img src="img/thumbs/apt1-living-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living-2" alt="Dnevni boravak sa sofom i TV-om – Apartman 1"></a>
+          <a href="img/apt2-living-2.jpg" data-apt="2"><img src="img/thumbs/apt2-living-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living-2" alt="Dnevni boravak i kuhinja – Apartman 2"></a>
+          <a href="img/apt1-bedroom.jpg" data-apt="1"><img src="img/thumbs/apt1-bedroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-bedroom" alt="Spavaća soba s bračnim krevetom – Apartman 1"></a>
+          <a href="img/apt1-kitchen.jpg" data-apt="1"><img src="img/thumbs/apt1-kitchen.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-kitchen" alt="Opremljena kuhinja s rernom – Apartman 1"></a>
+          <a href="img/apt2-living-3.jpg" data-apt="2"><img src="img/thumbs/apt2-living-3.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living-3" alt="Dnevni boravak s TV-om – Apartman 2"></a>
+          <a href="img/apt1-bathroom.jpg" data-apt="1"><img src="img/thumbs/apt1-bathroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-bathroom" alt="Kupatilo s tuš-kabinom – Apartman 1"></a>
+          <a href="img/apt2-bedroom.jpg" data-apt="2"><img src="img/thumbs/apt2-bedroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-bedroom" alt="Spavaća soba – Apartman 2"></a>
+          <a href="img/apt1-bed.jpg" data-apt="1"><img src="img/thumbs/apt1-bed.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-bed" alt="Krevet sa svježom posteljinom i peškirima – Apartman 1"></a>
+          <a href="img/apt1-living.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living" alt="Dnevni boravak s kuhinjom – Apartman 1"></a>
+          <a href="img/apt1-living-3.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-living-3.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living-3" alt="Dnevni boravak i kuhinja – Apartman 1"></a>
+          <a href="img/apt1-bedroom-2.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-bedroom-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-bedroom-2" alt="Spavaća soba s pogledom – Apartman 1"></a>
+          <a href="img/apt1-view.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-view.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-view" alt="Pogled iz spavaće sobe na dnevni boravak – Apartman 1"></a>
+          <a href="img/apt1-tv.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-tv.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-tv" alt="TV kutak – Apartman 1"></a>
+          <a href="img/apt2-living.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living" alt="Dnevni boravak s ugaonom garniturom – Apartman 2"></a>
+          <a href="img/apt2-hall.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-hall.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-hall" alt="Pogled na kuhinju i ulaz – Apartman 2"></a>
+          <a href="img/apt2-kitchen.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-kitchen.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-kitchen" alt="Kuhinja s rernom – Apartman 2"></a>
+          <a href="img/apt2-bathroom.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-bathroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-bathroom" alt="Kupatilo s tušem i veš mašinom – Apartman 2"></a>
+          <a href="img/apt2-sink.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-sink.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-sink" alt="Detalj kupatila – Apartman 2"></a>
         </div>
+        <p class="gallery-more">
+          <button type="button" class="btn btn-outline" id="gallery-all" data-i18n="gallery.all">Pogledajte sve fotografije (18)</button>
+        </p>
       </div>
     </section>
 
@@ -148,7 +167,6 @@
           <h2 data-i18n="loc.title">Kako do nas</h2>
           <p data-i18n-html="loc.address">Ulica i kućni broj<br>10000 Grad, Država</p>
           <ul class="distances">
-            <li><span data-i18n="loc.beach">Plaža</span><strong>200 m</strong></li>
             <li><span data-i18n="loc.center">Centar grada</span><strong>500 m</strong></li>
             <li><span data-i18n="loc.shop">Prodavnica</span><strong>150 m</strong></li>
             <li><span data-i18n="loc.airport">Aerodrom</span><strong>25 km</strong></li>
@@ -200,9 +218,8 @@
               <label for="apartment" data-i18n="form.apartment">Apartman</label>
               <select id="apartment" name="apartment">
                 <option data-i18n="form.any">Svejedno</option>
-                <option data-i18n="apts.1.name">Studio Sunce</option>
-                <option data-i18n="apts.2.name">Apartman Trg</option>
-                <option data-i18n="apts.3.name">Porodični apartman</option>
+                <option data-i18n="apts.1.name">Apartman 1</option>
+                <option data-i18n="apts.2.name">Apartman 2</option>
               </select>
             </div>
           </div>
@@ -223,6 +240,16 @@
       <a href="#top" data-i18n="footer.top">Nazad na vrh ↑</a>
     </div>
   </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <figure>
+      <img alt="">
+      <figcaption><span class="lb-caption"></span> <span class="lb-count"></span></figcaption>
+    </figure>
+    <button type="button" class="lb-btn lb-prev" data-i18n-attr="aria-label:lightbox.prev" aria-label="Prethodna">‹</button>
+    <button type="button" class="lb-btn lb-next" data-i18n-attr="aria-label:lightbox.next" aria-label="Sljedeća">›</button>
+    <button type="button" class="lb-btn lb-close" data-i18n-attr="aria-label:lightbox.close" aria-label="Zatvori">×</button>
+  </dialog>
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>

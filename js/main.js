@@ -78,3 +78,71 @@ form.addEventListener('submit', (e) => {
   status.className = 'form-status ok';
   status.textContent = t('form.ok');
 });
+
+// Galerija: uvećani prikaz fotografija
+const lightbox = document.getElementById('lightbox');
+const lbImg = lightbox.querySelector('img');
+const lbCaption = lightbox.querySelector('.lb-caption');
+const lbCount = lightbox.querySelector('.lb-count');
+const galleryLinks = [...document.querySelectorAll('#gallery a')];
+let lbItems = [];
+let lbIndex = 0;
+
+function showPhoto(i) {
+  lbIndex = (i + lbItems.length) % lbItems.length;
+  const link = lbItems[lbIndex];
+  const alt = link.querySelector('img').alt;
+  lbImg.src = link.href;
+  lbImg.alt = alt;
+  lbCaption.textContent = alt;
+  lbCount.textContent = `${lbIndex + 1} / ${lbItems.length}`;
+}
+
+function openLightbox(items, start = 0) {
+  lbItems = items;
+  showPhoto(start);
+  lightbox.showModal();
+}
+
+galleryLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    openLightbox(galleryLinks, galleryLinks.indexOf(link));
+  });
+});
+
+document.getElementById('gallery-all').addEventListener('click', () => openLightbox(galleryLinks));
+
+document.querySelectorAll('[data-open-apt]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    openLightbox(galleryLinks.filter((a) => a.dataset.apt === btn.dataset.openApt));
+  });
+});
+
+lightbox.querySelector('.lb-prev').addEventListener('click', () => showPhoto(lbIndex - 1));
+lightbox.querySelector('.lb-next').addEventListener('click', () => showPhoto(lbIndex + 1));
+lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.close());
+
+// Klik na tamnu pozadinu zatvara prikaz
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) lightbox.close();
+});
+
+lightbox.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') showPhoto(lbIndex - 1);
+  if (e.key === 'ArrowRight') showPhoto(lbIndex + 1);
+});
+
+// Prevlačenje prstom na mobitelu
+let touchX = null;
+lightbox.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+lightbox.addEventListener('touchend', (e) => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX;
+  if (Math.abs(dx) > 50) showPhoto(lbIndex + (dx < 0 ? 1 : -1));
+  touchX = null;
+});
+
+document.addEventListener('langchange', () => {
+  if (lightbox.open) showPhoto(lbIndex);
+});
