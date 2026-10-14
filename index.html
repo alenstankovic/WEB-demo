@@ -82,18 +82,6 @@
         </div>
         <div class="cards">
           <article class="card">
-            <button type="button" class="card-photo" data-open-apt="1">
-              <img class="photo" src="img/thumbs/apt1-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living" alt="Dnevni boravak s kuhinjom – Apartman 1">
-              <span class="photo-count" data-i18n="apts.photos">📷 Fotografije</span>
-            </button>
-            <div class="card-body">
-              <h3 data-i18n="apts.1.name">Apartman 1</h3>
-              <p class="meta" data-i18n="apts.1.meta">Spavaća soba · dnevni boravak · kuhinja · kupatilo</p>
-              <p data-i18n="apts.1.desc">Svijetao apartman s velikim prozorom, zasebnom spavaćom sobom s bračnim krevetom, opremljenom kuhinjom i kupatilom s tuš-kabinom.</p>
-              <p class="price" data-i18n="apts.price">Cijena na upit</p>
-            </div>
-          </article>
-          <article class="card">
             <button type="button" class="card-photo" data-open-apt="2">
               <img class="photo" src="img/thumbs/apt2-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living" alt="Dnevni boravak s ugaonom garniturom i izlazom na balkon – Apartman 2">
               <span class="photo-count" data-i18n="apts.photos">📷 Fotografije</span>
@@ -102,6 +90,18 @@
               <h3 data-i18n="apts.2.name">Apartman 2</h3>
               <p class="meta" data-i18n="apts.2.meta">Spavaća soba · dnevni boravak · kuhinja · balkon</p>
               <p data-i18n="apts.2.desc">Prostran dnevni boravak s ugaonom garniturom i izlazom na balkon, opremljena kuhinja i kupatilo s veš mašinom.</p>
+              <p class="price" data-i18n="apts.price">Cijena na upit</p>
+            </div>
+          </article>
+          <article class="card">
+            <button type="button" class="card-photo" data-open-apt="3">
+              <img class="photo" src="img/thumbs/apt3-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-living" alt="Dnevni boravak s kuhinjom – Apartman 3">
+              <span class="photo-count" data-i18n="apts.photos">📷 Fotografije</span>
+            </button>
+            <div class="card-body">
+              <h3 data-i18n="apts.3.name">Apartman 3</h3>
+              <p class="meta" data-i18n="apts.3.meta">Spavaća soba · dnevni boravak · kuhinja · kupatilo</p>
+              <p data-i18n="apts.3.desc">Svijetao apartman s velikim prozorom, zasebnom spavaćom sobom s bračnim krevetom, opremljenom kuhinjom i kupatilom s tuš-kabinom i veš mašinom.</p>
               <p class="price" data-i18n="apts.price">Cijena na upit</p>
             </div>
           </article>
@@ -149,20 +149,27 @@
         <div class="gallery" id="gallery">
           <a href="img/apt4-living-2.jpg" data-apt="4"><img src="img/thumbs/apt4-living-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt4-living-2" alt="Dnevni boravak sa sofom i foteljom – Apartman 4"></a>
           <a href="img/apt2-living-2.jpg" data-apt="2"><img src="img/thumbs/apt2-living-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living-2" alt="Dnevni boravak i kuhinja – Apartman 2"></a>
-          <a href="img/apt1-bedroom.jpg" data-apt="1"><img src="img/thumbs/apt1-bedroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-bedroom" alt="Spavaća soba s bračnim krevetom – Apartman 1"></a>
+          <a href="img/apt3-bedroom.jpg" data-apt="3"><img src="img/thumbs/apt3-bedroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-bedroom" alt="Spavaća soba s bračnim krevetom – Apartman 3"></a>
           <a href="img/apt4-kitchen-view.jpg" data-apt="4"><img src="img/thumbs/apt4-kitchen-view.jpg" loading="lazy" data-i18n-attr="alt:photo.apt4-kitchen-view" alt="Pogled iz kuhinje na dnevni boravak – Apartman 4"></a>
-          <a href="img/apt1-living-3.jpg" data-apt="1"><img src="img/thumbs/apt1-living-3.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living-3" alt="Dnevni boravak – Apartman 1"></a>
+          <a href="img/apt3-living-3.jpg" data-apt="3"><img src="img/thumbs/apt3-living-3.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-living-3" alt="Dnevni boravak – Apartman 3"></a>
           <a href="img/apt2-living-3.jpg" data-apt="2"><img src="img/thumbs/apt2-living-3.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living-3" alt="Dnevni boravak s TV-om – Apartman 2"></a>
           <a href="img/apt4-bedroom.jpg" data-apt="4"><img src="img/thumbs/apt4-bedroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt4-bedroom" alt="Spavaća soba s bračnim krevetom – Apartman 4"></a>
-          <a href="img/apt1-bathroom.jpg" data-apt="1"><img src="img/thumbs/apt1-bathroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-bathroom" alt="Kupatilo s tuš-kabinom – Apartman 1"></a>
-          <a href="img/apt1-living.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living" alt="Dnevni boravak s kuhinjom – Apartman 1"></a>
-          <a href="img/apt1-living-2.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-living-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-living-2" alt="Dnevni boravak s pogledom kroz prozor – Apartman 1"></a>
-          <a href="img/apt1-sofa.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-sofa.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-sofa" alt="Sofa i podna lampa – Apartman 1"></a>
-          <a href="img/apt1-tv.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-tv.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-tv" alt="TV kutak – Apartman 1"></a>
-          <a href="img/apt1-bed.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-bed.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-bed" alt="Krevet sa svježom posteljinom – Apartman 1"></a>
-          <a href="img/apt1-view.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-view.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-view" alt="Pogled iz spavaće sobe na dnevni boravak – Apartman 1"></a>
-          <a href="img/apt1-kitchen.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-kitchen.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-kitchen" alt="Opremljena kuhinja – Apartman 1"></a>
-          <a href="img/apt1-sink.jpg" data-apt="1" hidden><img src="img/thumbs/apt1-sink.jpg" loading="lazy" data-i18n-attr="alt:photo.apt1-sink" alt="Detalj kupatila – Apartman 1"></a>
+          <a href="img/apt3-bathroom.jpg" data-apt="3"><img src="img/thumbs/apt3-bathroom.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-bathroom" alt="Kupatilo s tuš-kabinom – Apartman 3"></a>
+          <a href="img/apt3-living.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-living" alt="Dnevni boravak s kuhinjom – Apartman 3"></a>
+          <a href="img/apt3-living-2.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-living-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-living-2" alt="Dnevni boravak s pogledom kroz prozor – Apartman 3"></a>
+          <a href="img/apt3-sofa.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-sofa.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-sofa" alt="Sofa i podna lampa – Apartman 3"></a>
+          <a href="img/apt3-tv.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-tv.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-tv" alt="TV kutak – Apartman 3"></a>
+          <a href="img/apt3-bed.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-bed.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-bed" alt="Krevet sa svježom posteljinom – Apartman 3"></a>
+          <a href="img/apt3-view.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-view.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-view" alt="Pogled iz spavaće sobe na dnevni boravak – Apartman 3"></a>
+          <a href="img/apt3-kitchen.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-kitchen.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-kitchen" alt="Opremljena kuhinja – Apartman 3"></a>
+          <a href="img/apt3-sink.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-sink.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-sink" alt="Detalj kupatila – Apartman 3"></a>
+          <a href="img/apt3-living-4.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-living-4.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-living-4" alt="Dnevni boravak s pogledom na kuhinju – Apartman 3"></a>
+          <a href="img/apt3-kitchen-2.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-kitchen-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-kitchen-2" alt="Kuhinja – Apartman 3"></a>
+          <a href="img/apt3-hall.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-hall.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-hall" alt="Ulaz s ugradnim ormarima – Apartman 3"></a>
+          <a href="img/apt3-wardrobe.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-wardrobe.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-wardrobe" alt="Ulaz i ormar s policama – Apartman 3"></a>
+          <a href="img/apt3-bathroom-door.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-bathroom-door.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-bathroom-door" alt="Hodnik i ulaz u kupatilo – Apartman 3"></a>
+          <a href="img/apt3-bathroom-2.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-bathroom-2.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-bathroom-2" alt="Kupatilo s tuš-kabinom i lavaboom – Apartman 3"></a>
+          <a href="img/apt3-washer.jpg" data-apt="3" hidden><img src="img/thumbs/apt3-washer.jpg" loading="lazy" data-i18n-attr="alt:photo.apt3-washer" alt="Veš mašina – Apartman 3"></a>
           <a href="img/apt2-living.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-living.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-living" alt="Dnevni boravak s ugaonom garniturom i izlazom na balkon – Apartman 2"></a>
           <a href="img/apt2-hall.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-hall.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-hall" alt="Pogled na kuhinju i ulaz – Apartman 2"></a>
           <a href="img/apt2-kitchen.jpg" data-apt="2" hidden><img src="img/thumbs/apt2-kitchen.jpg" loading="lazy" data-i18n-attr="alt:photo.apt2-kitchen" alt="Kuhinja s rernom – Apartman 2"></a>
@@ -246,8 +253,8 @@
               <label for="apartment" data-i18n="form.apartment">Apartman</label>
               <select id="apartment" name="apartment">
                 <option data-i18n="form.any">Svejedno</option>
-                <option data-i18n="apts.1.name">Apartman 1</option>
                 <option data-i18n="apts.2.name">Apartman 2</option>
+                <option data-i18n="apts.3.name">Apartman 3</option>
                 <option data-i18n="apts.4.name">Apartman 4</option>
               </select>
             </div>
