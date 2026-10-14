@@ -48,7 +48,7 @@ const translations = {
     'apts.2.desc': 'A spacious living room with a corner sofa and balcony access, an equipped kitchen and a bathroom with a washing machine.',
     'apts.4.name': 'Apartment 4',
     'apts.4.meta': 'Bedroom · living room · kitchen · bathroom',
-    'apts.4.desc': 'A modern apartment with a living room, a bedroom with a double bed, an equipped kitchen, a marble bathroom and a smart home system with video intercom.',
+    'apts.4.desc': 'A modern apartment with a living room, a bedroom with a double bed, an equipped kitchen, a marble bathroom with a washing machine and a smart home system with video intercom.',
 
     'photo.about': 'Living room and bedroom',
     'photo.apt3-living': 'Living room with kitchen – Apartment 3',
