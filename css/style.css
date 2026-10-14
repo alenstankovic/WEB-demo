@@ -163,7 +163,7 @@ h3 { font-size: 1.35rem; }
 .stats span { font-size: 0.9rem; color: var(--muted); }
 
 /* Cards */
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; max-width: 960px; margin-inline: auto; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .card {
   background: #fff;
   border-radius: var(--radius);

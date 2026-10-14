@@ -1,5 +1,6 @@
 // Prijevodi. Bosanski tekst je u samom HTML-u (data-i18n atributi),
 // ovdje su samo engleski prijevodi i poruke koje koristi JavaScript.
+(() => {
 const LANGS = ['bs', 'en'];
 const DEFAULT_LANG = 'bs';
 
@@ -41,30 +42,49 @@ const translations = {
     'apts.price': 'Price on request',
     'apts.1.name': 'Apartment 1',
     'apts.1.meta': 'Bedroom · living room · kitchen · bathroom',
-    'apts.1.desc': 'A bright apartment with an equipped kitchen, marble bathroom, air conditioning and a smart home system with video intercom.',
+    'apts.1.desc': 'A bright apartment with a large window, a separate bedroom with a double bed, an equipped kitchen and a bathroom with a walk-in shower.',
     'apts.2.name': 'Apartment 2',
     'apts.2.meta': 'Bedroom · living room · kitchen · balcony',
     'apts.2.desc': 'A spacious living room with a corner sofa and balcony access, an equipped kitchen and a bathroom with a washing machine.',
+    'apts.4.name': 'Apartment 4',
+    'apts.4.meta': 'Bedroom · living room · kitchen · bathroom',
+    'apts.4.desc': 'A modern apartment with a living room, a bedroom with a double bed, an equipped kitchen, a marble bathroom and a smart home system with video intercom.',
 
     'photo.about': 'Living room and bedroom',
     'photo.apt1-living': 'Living room with kitchen – Apartment 1',
-    'photo.apt1-living-2': 'Living room with sofa and TV – Apartment 1',
-    'photo.apt1-living-3': 'Living room and kitchen – Apartment 1',
-    'photo.apt1-bedroom': 'Bedroom with a double bed – Apartment 1',
-    'photo.apt1-bedroom-2': 'Bedroom with a view – Apartment 1',
-    'photo.apt1-bed': 'Bed with fresh linen and towels – Apartment 1',
-    'photo.apt1-view': 'View from the bedroom into the living room – Apartment 1',
+    'photo.apt1-living-2': 'Living room with a window view – Apartment 1',
+    'photo.apt1-living-3': 'Living room – Apartment 1',
+    'photo.apt1-sofa': 'Sofa and floor lamp – Apartment 1',
     'photo.apt1-tv': 'TV corner – Apartment 1',
-    'photo.apt1-kitchen': 'Equipped kitchen with oven – Apartment 1',
+    'photo.apt1-bedroom': 'Bedroom with a double bed – Apartment 1',
+    'photo.apt1-bed': 'Bed with fresh linen – Apartment 1',
+    'photo.apt1-view': 'View from the bedroom into the living room – Apartment 1',
+    'photo.apt1-kitchen': 'Equipped kitchen – Apartment 1',
     'photo.apt1-bathroom': 'Bathroom with walk-in shower – Apartment 1',
-    'photo.apt2-living': 'Living room with corner sofa – Apartment 2',
+    'photo.apt1-sink': 'Bathroom detail – Apartment 1',
+    'photo.apt2-living': 'Living room with corner sofa and balcony door – Apartment 2',
     'photo.apt2-living-2': 'Living room and kitchen – Apartment 2',
     'photo.apt2-living-3': 'Living room with TV – Apartment 2',
     'photo.apt2-hall': 'View of the kitchen and entrance – Apartment 2',
     'photo.apt2-kitchen': 'Kitchen with oven – Apartment 2',
     'photo.apt2-bedroom': 'Bedroom – Apartment 2',
+    'photo.apt2-bedroom-2': 'Bedroom with a window – Apartment 2',
     'photo.apt2-bathroom': 'Bathroom with shower and washing machine – Apartment 2',
-    'photo.apt2-sink': 'Bathroom detail – Apartment 2',
+    'photo.apt2-bathroom-2': 'Bathroom – Apartment 2',
+    'photo.apt4-living': 'Living room – Apartment 4',
+    'photo.apt4-living-2': 'Living room with sofa and armchair – Apartment 4',
+    'photo.apt4-living-3': 'Living room and kitchen – Apartment 4',
+    'photo.apt4-sofa': 'Sofa – Apartment 4',
+    'photo.apt4-tv': 'TV corner – Apartment 4',
+    'photo.apt4-kitchen': 'Kitchen – Apartment 4',
+    'photo.apt4-kitchen-2': 'Kitchen with oven – Apartment 4',
+    'photo.apt4-kitchen-view': 'View from the kitchen into the living room – Apartment 4',
+    'photo.apt4-bedroom': 'Bedroom with a double bed – Apartment 4',
+    'photo.apt4-bedroom-view': 'Bedroom and living room – Apartment 4',
+    'photo.apt4-hall': 'Hallway with built-in wardrobes – Apartment 4',
+    'photo.apt4-bathroom': 'Bathroom with walk-in shower – Apartment 4',
+    'photo.apt4-bathroom-2': 'Walk-in shower – Apartment 4',
+    'photo.apt4-intercom': 'Video intercom and bathroom entrance – Apartment 4',
 
     'amen.eyebrow': 'Amenities',
     'amen.title': 'Everything you need for your holiday',
@@ -79,7 +99,7 @@ const translations = {
 
     'gallery.eyebrow': 'Gallery',
     'gallery.title': 'A look inside',
-    'gallery.all': 'View all photos (18)',
+    'gallery.all': 'View all photos',
 
     'lightbox.prev': 'Previous',
     'lightbox.next': 'Next',
@@ -198,3 +218,4 @@ document.querySelectorAll('.lang-switch [data-lang]').forEach((btn) => {
 window.i18n = { t, setLang, get lang() { return currentLang; } };
 
 setLang(initialLang());
+})();

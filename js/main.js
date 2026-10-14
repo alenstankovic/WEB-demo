@@ -111,6 +111,7 @@ galleryLinks.forEach((link) => {
   });
 });
 
+document.getElementById('gallery-count').textContent = galleryLinks.length;
 document.getElementById('gallery-all').addEventListener('click', () => openLightbox(galleryLinks));
 
 document.querySelectorAll('[data-open-apt]').forEach((btn) => {
