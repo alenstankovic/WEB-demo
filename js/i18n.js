@@ -113,7 +113,7 @@ const translations = {
     'amen.title': 'Everything you need for your holiday',
     'amen.wifi': 'Free Wi-Fi',
     'amen.ac': 'Air conditioning',
-    'amen.parking': 'Free parking',
+    'amen.parking': 'Paid parking',
     'amen.kitchen': 'Equipped kitchen',
     'amen.terrace': 'Terrace / balcony',
     'amen.washer': 'Washing machine',
