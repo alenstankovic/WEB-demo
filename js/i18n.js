@@ -6,7 +6,7 @@ const DEFAULT_LANG = 'bs';
 
 const translations = {
   en: {
-    'meta.title': 'Sun Square Apartments',
+    'meta.title': 'Sun Square Apartments – Tuzla',
     'meta.desc': 'Sun Square Apartments in Tuzla – comfortable apartments for your stay. Book directly with the owner.',
 
     'header.home': 'Sun Square Apartments – home',
@@ -22,9 +22,9 @@ const translations = {
     'nav.open': 'Open menu',
     'nav.close': 'Close menu',
 
-    'hero.eyebrow': 'Welcome',
-    'hero.title': 'Your place in the sun',
-    'hero.lead': 'Comfortable, modern apartments in a quiet location in Tuzla, 100 m from the town centre and 300 m from the Pannonian Lakes.',
+    'hero.eyebrow': 'Welcome to Tuzla',
+    'hero.title': 'Your home in the heart of Tuzla',
+    'hero.lead': 'Four modern, fully equipped apartments in a quiet spot – just 100 m from the town centre and 300 m from the Pannonian Lakes.',
     'hero.cta': 'Check availability',
     'hero.cta2': 'View apartments',
 
