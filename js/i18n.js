@@ -7,7 +7,7 @@ const DEFAULT_LANG = 'bs';
 const translations = {
   en: {
     'meta.title': 'Sun Square Apartments',
-    'meta.desc': 'Sun Square Apartments – comfortable apartments for your holiday. Book directly with the owner.',
+    'meta.desc': 'Sun Square Apartments in Tuzla – comfortable apartments for your stay. Book directly with the owner.',
 
     'header.home': 'Sun Square Apartments – home',
     'header.apartments': 'Apartments',
@@ -24,7 +24,7 @@ const translations = {
 
     'hero.eyebrow': 'Welcome',
     'hero.title': 'Your place in the sun',
-    'hero.lead': 'Comfortable, modern apartments in a quiet location, just steps from the town centre.',
+    'hero.lead': 'Comfortable, modern apartments in a quiet location in Tuzla, 100 m from the town centre and 300 m from the Pannonian Lakes.',
     'hero.cta': 'Check availability',
     'hero.cta2': 'View apartments',
 
@@ -130,12 +130,13 @@ const translations = {
 
     'loc.eyebrow': 'Location',
     'loc.title': 'How to find us',
-    'loc.address': 'Street and number<br>10000 City, Country',
+    'loc.address': 'Atik mahala 2<br>75000 Tuzla, Bosnia and Herzegovina',
+    'loc.open': 'Open in Google Maps ↗',
+    'loc.mapTitle': 'Map – Sun Square Apartments, Atik mahala 2, Tuzla',
     'loc.center': 'Town centre',
+    'loc.lakes': 'Pannonian Lakes',
     'loc.shop': 'Shop',
     'loc.airport': 'Airport',
-    'loc.map': 'Map',
-    'loc.mapLabel': 'Map placeholder (replace with a Google Maps embed)',
 
     'contact.eyebrow': 'Booking',
     'contact.title': 'Send an inquiry',
